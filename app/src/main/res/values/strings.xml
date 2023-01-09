@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">deSters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Insert answer</string>
+    <string name="animals_img">img_animals</string>
+    <string name="colors_img">img_colors</string>
+    <string name="numbers_img">img_numbers</string>
+    <string name="clothes_img">img_clothes</string>
+    <string name="Animals_text">Animals</string>
+    <string name="Numbers_text">Numbers</string>
+    <string name="Clothes_text">Clothes</string>
+    <string name="Colors_text">Colors</string>
+    <string name="X">X</string>
+    <string name="Clues">Clues</string>
+    <string name="Next">Next</string>
+    <string name="Prev">Prev</string>
+    <string name="text">Text</string>
+    <string name="todo">TODO</string>
+    <string name="rez">0</string>
+    <string name="start">Start</string>
+    <string name="verifica">✔</string>
+    <string name="raspunde">Answer the question</string>
+    <string name="last">Score in last section:</string>
+</resources>

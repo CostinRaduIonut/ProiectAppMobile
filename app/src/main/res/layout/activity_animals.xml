@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backanimals"
+    tools:context=".Animals">
+
+
+    <Button
+        android:id="@+id/Back"
+        android:layout_width="38dp"
+        android:layout_height="44dp"
+        android:onClick="onClickX"
+        android:text="@string/X"
+        android:textColor="#FFCC80"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <FrameLayout
+        android:id="@+id/fragmentContainerView5"
+        android:layout_width="336dp"
+        android:layout_height="112dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956">
+
+        <Button
+            android:id="@+id/cluesBtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            android:onClick="onClickClues"
+            android:text="@string/Clues" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickNext"
+        android:text="@string/Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/prevBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <EditText
+        android:id="@+id/text_inserted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:backgroundTint="#F6F6F6"
+        android:ems="10"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/hello_blank_fragment"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:shadowColor="#00190303"
+        android:text="@string/hello_blank_fragment"
+        android:textColor="#000000"
+        android:textColorHint="#818181"
+        android:textColorLink="#A8A8A8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.586" />
+
+    <Button
+        android:id="@+id/prevBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickPrev"
+        android:text="@string/Prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nextBtn"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.484" />
+
+    <Button
+        android:id="@+id/verifica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="verifica"
+        android:text="@string/verifica"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentContainerView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_inserted" />
+
+    <EditText
+        android:id="@+id/ghicitoare"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:autoSizeTextType="uniform"
+        android:background="@android:drawable/spinner_dropdown_background"
+        android:backgroundTint="#F4F4F4"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:hint="@string/raspunde"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:shadowColor="#000000"
+        android:textColorHint="#757575"
+        app:layout_constraintBottom_toTopOf="@+id/text_inserted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.512"
+        tools:ignore="DuplicateSpeakableTextCheck,DuplicateSpeakableTextCheck"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#000000"
+        android:text="@string/raspunde"
+        android:textColor="#5D4037"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.075"
+        tools:ignore="TextContrastCheck" />
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/dogImageView"-->
+    <!--        android:layout_width="288dp"-->
+    <!--        android:layout_height="326dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        app:layout_constraintVertical_bias="0.113"-->
+    <!--        tools:srcCompat="@tools:sample/avatars" />-->
+
+    <!--    <Button-->
+    <!--        android:id="@+id/nextDogButton"-->
+    <!--        android:layout_width="141dp"-->
+    <!--        android:layout_height="49dp"-->
+    <!--        android:text="Urmatorul"-->
+    <!--        android:textSize="14sp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.885"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/dogImageView"-->
+    <!--        app:layout_constraintVertical_bias="0.361" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
